@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Cal Import</title>
+    <meta name="description" content="Privacy Policy for Cal Import">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f5f5f5;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 28px;
+            margin-bottom: 10px;
+            color: #1a1a1a;
+        }
+
+        .header-info {
+            color: #666;
+            font-size: 14px;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #f0f0f0;
+        }
+
+        h2 {
+            font-size: 22px;
+            margin-top: 35px;
+            margin-bottom: 15px;
+            color: #2c3e50;
+        }
+
+        h3 {
+            font-size: 18px;
+            margin-top: 25px;
+            margin-bottom: 10px;
+            color: #34495e;
+        }
+
+        p {
+            margin-bottom: 15px;
+            line-height: 1.7;
+        }
+
+        ul {
+            margin-left: 25px;
+            margin-bottom: 15px;
+        }
+
+        li {
+            margin-bottom: 8px;
+            line-height: 1.6;
+        }
+
+        .highlight {
+            background: #fff3cd;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-weight: 600;
+        }
+
+        .emphasis {
+            font-weight: 700;
+            color: #e74c3c;
+        }
+
+        .success {
+            color: #27ae60;
+            font-weight: 600;
+        }
+
+        .section-box {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+            border-left: 4px solid #3498db;
+        }
+
+        .permission-box {
+            background: #fff8e1;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 15px 0;
+            border-left: 4px solid #ffc107;
+        }
+
+        .contact-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #e8f4f8;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .contact-section strong {
+            color: #2980b9;
+        }
+
+        code {
+            background: #f4f4f4;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+            font-size: 14px;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 24px;
+            }
+
+            h2 {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Privacy Policy - Cal Import</h1>
+        <div class="header-info">
+            <p>Effective date: <strong>2026-01-22</strong> · Contact: <a href="mailto:damaerguo@gmail.com">damaerguo@gmail.com</a></p>
+        </div>
+
+        <h2>Overview</h2>
+        <p>
+            <strong>Cal Import</strong> ("the App") helps you <strong>import calendar events</strong> from <span class="highlight">CSV</span> or <span class="highlight">ICS</span> files into your device's system calendar.
+            This policy explains what data the App accesses and how it is handled.
+        </p>
+
+        <div class="section-box">
+            <h3>Important: Data Source Clarification</h3>
+            <p>
+                <span class="emphasis">The App does NOT read or export your existing calendar events.</span>
+                The App only <strong>imports</strong> events from files that <strong>you explicitly select and provide</strong>.
+            </p>
+        </div>
+
+        <h2>Data the App accesses</h2>
+        <p>With your permission, the App accesses the following:</p>
+
+        <h3>1. Files You Select (CSV/ICS)</h3>
+        <ul>
+            <li>The App <strong>only reads files that you explicitly choose</strong> from your device storage</li>
+            <li>For <strong>CSV files</strong>, you map which columns contain event data (title, dates, location, etc.)</li>
+            <li>For <strong>ICS files</strong>, the App reads standard iCalendar format data</li>
+            <li>Supported event data from files includes:
+                <ul style="margin-top: 8px;">
+                    <li>Event title</li>
+                    <li>Start and end time (including time zone where applicable)</li>
+                    <li>All-day indicator</li>
+                    <li>Location (if present)</li>
+                    <li>Notes/description (if present)</li>
+                    <li>Unique identifier (UID, if present)</li>
+                    <li>Recurrence rules (for repeating events)</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h3>2. System Calendar (Write Access)</h3>
+        <ul>
+            <li>The App <strong>writes events</strong> to your device's system calendar at your request</li>
+            <li>The App <strong>does NOT read</strong> or access your existing calendar events except for deduplication purposes (comparing fingerprints to prevent duplicates)</li>
+            <li>All imported events are stored in your device's local calendar</li>
+        </ul>
+
+        <p class="success">The App does NOT require an account, registration, or login.</p>
+
+        <h2>How the App uses data</h2>
+        <ul>
+            <li>The App uses file data <strong>only to create calendar events</strong> that you explicitly request to import</li>
+            <li><strong>Deduplication:</strong> The App may compare event "fingerprints" (title + time + location) with existing events to prevent duplicates, if you enable this feature</li>
+            <li><strong>Local processing:</strong> All file parsing and event creation happens <strong>locally on your device</strong></li>
+            <li><strong>Import history:</strong> The App stores a local record of your import batches for undo functionality</li>
+        </ul>
+
+        <h2>Data sharing and transfers</h2>
+        <div class="section-box" style="border-left-color: #27ae60;">
+            <ul>
+                <li>The App does <span class="emphasis">NOT</span> upload your calendar data to our servers</li>
+                <li>The App does <span class="emphasis">NOT</span> sell your data</li>
+                <li>The App does <span class="emphasis">NOT</span> share your data with third parties</li>
+                <li>The App does <span class="emphasis">NOT</span> use analytics or tracking services</li>
+                <li>The App does <span class="emphasis">NOT</span> collect any personally identifiable information (PII)</li>
+            </ul>
+        </div>
+
+        <h3>File Picker Integration</h3>
+        <p>When you select a file using your device's file picker, the App only receives the file path and content of the specific file you choose. The App does not access other files on your device.</p>
+
+        <h2>Data storage and deletion</h2>
+        <ul>
+            <li><strong>Imported events:</strong> Stored in your device's system calendar. Delete using your calendar app.</li>
+            <li><strong>Import history:</strong> Stored locally on your device for batch management and undo functionality. Can be deleted via the App's settings.</li>
+            <li><strong>Source files:</strong> The App does not copy or modify your source files. They remain in their original location.</li>
+            <li><strong>App data:</strong> All App data is stored locally on your device. Can be cleared via the App's settings.</li>
+        </ul>
+
+        <h2>Permissions</h2>
+        <div class="permission-box">
+            <p>The App requests the following permissions:</p>
+            <ul>
+                <li><strong>Calendar (Write)</strong> — to create calendar events from your imported files</li>
+                <li><strong>Storage/File Access</strong> — to read CSV/ICS files that you select</li>
+            </ul>
+            <p style="margin-top: 10px;">If you deny these permissions, the import features will not function.</p>
+        </div>
+
+        <h2>In-app purchase</h2>
+        <ul>
+            <li>The App offers a <strong>one-time Pro purchase</strong> to remove the 10-event import limit</li>
+            <li>Payment is processed by <strong>Apple App Store</strong> or <strong>Google Play</strong></li>
+            <li>The App does <strong>NOT</strong> receive or store your payment card details</li>
+            <li>Purchase status is stored locally on your device and verified by the store</li>
+            <li><strong>No subscription</strong> — Pro is a one-time purchase with no recurring charges</li>
+        </ul>
+
+        <h2>Third-party services</h2>
+        <p>The App uses the following third-party services:</p>
+        <ul>
+            <li><strong>Apple App Store / Google Play</strong> — For payment processing only</li>
+            <li><strong>No analytics SDKs</strong> — The App does not use analytics, advertising, or tracking services</li>
+            <li><strong>No crash reporting</strong> — The App does not use third-party crash reporting services</li>
+        </ul>
+
+        <h2>Data security</h2>
+        <ul>
+            <li>All data processing happens <strong>locally on your device</strong></li>
+            <li>No data is transmitted over the internet except for App Store/Play Store purchase verification</li>
+            <li>Import history is stored using encrypted local storage</li>
+            <li>The App follows platform security best practices for file and calendar access</li>
+        </ul>
+
+        <h2>Children's privacy</h2>
+        <p>The App is not directed to children under 13. The App does not knowingly collect personal information from children under 13. If you are a parent or guardian and believe your child has provided us with personal information, please contact us.</p>
+
+        <h2>Changes to this policy</h2>
+        <p>We may update this privacy policy from time to time. The latest version will be posted on this page with an updated effective date. Continued use of the App after changes constitutes acceptance of the updated policy.</p>
+
+        <h2>Your rights</h2>
+        <ul>
+            <li><strong>Access:</strong> You can view all imported events in your calendar app</li>
+            <li><strong>Deletion:</strong> You can delete imported events via your calendar app or the App's batch management feature</li>
+            <li><strong>Opt-out:</strong> You can uninstall the App at any time. Imported events will remain in your calendar unless you delete them.</li>
+            <li><strong>Data portability:</strong> Since all data is stored in your device's calendar, you already have full access to export it using your calendar app or other tools</li>
+        </ul>
+
+        <h2>Compliance</h2>
+        <ul>
+            <li><strong>GDPR:</strong> The App does not collect or transfer personal data, thus GDPR data transfer requirements do not apply</li>
+            <li><strong>CCPA:</strong> The App does not sell personal information</li>
+            <!-- <li><strong>COPPA:</strong> The App is not directed to children under 13</li> -->
+        </ul>
+
+        <div class="contact-section">
+            <h2>Contact</h2>
+            <p>If you have questions about this privacy policy or the App's data practices, please contact:</p>
+            <p style="margin-top: 15px; font-size: 18px;">
+                <strong>Email:</strong> <a href="mailto:damaerguo@gmail.com">damaerguo@gmail.com</a>
+            </p>
+            <!-- <p style="margin-top: 10px;">
+                <strong>Developer:</strong> Individual Developer<br>
+                <strong>App Version:</strong> 1.0.0+
+            </p> -->
+        </div>
+
+        <p style="text-align: center; margin-top: 30px; color: #999; font-size: 12px;">
+            Last updated: January 22, 2026
+        </p>
+    </div>
+</body>
+</html>
