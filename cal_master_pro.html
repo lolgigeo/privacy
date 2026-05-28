@@ -144,7 +144,7 @@
     <div class="container">
         <h1>Privacy Policy - CalMasterPro</h1>
         <div class="header-info">
-            <p>Effective date: <strong>2026-05-25</strong> · Contact: <a href="mailto:damaerguo@gmail.com">damaerguo@gmail.com</a></p>
+            <p>Effective date: <strong>2026-05-28</strong> · Contact: <a href="mailto:damaerguo@gmail.com">damaerguo@gmail.com</a></p>
         </div>
 
         <h2>Overview</h2>
@@ -203,10 +203,18 @@
             <ul>
                 <li>The App does <span class="emphasis">NOT</span> sell your data</li>
                 <li>The App does <span class="emphasis">NOT</span> share your data with third parties for advertising</li>
-                <li>The App does <span class="emphasis">NOT</span> use analytics or tracking services</li>
                 <li>The App does <span class="emphasis">NOT</span> collect any personally identifiable information (PII)</li>
             </ul>
         </div>
+
+        <h3>Firebase Analytics & Crashlytics</h3>
+        <p>The App uses <strong>Firebase Analytics</strong> and <strong>Firebase Crashlytics</strong> (provided by Google) to improve app quality and user experience:</p>
+        <ul>
+            <li><strong>Analytics:</strong> Collects anonymized usage data such as screen views, feature interactions (import, export, dedup, share), and in-app purchase events. No calendar content, file contents, or personal information is ever sent to Firebase.</li>
+            <li><strong>Crashlytics:</strong> Automatically collects crash logs and stack traces when the app unexpectedly stops, helping us identify and fix bugs.</li>
+            <li><strong>Data minimization:</strong> We only log event names and non-sensitive parameters (e.g., "export_start", "dedup_scan_complete"). Calendar event titles, descriptions, locations, and attendee information are never transmitted.</li>
+            <li><strong>User control:</strong> You can request analytics data deletion by contacting us. Crashlytics data is retained for 90 days per Google's policy.</li>
+        </ul>
 
         <p>The only data sent externally is for the <strong>Share</strong> feature: when you generate a shared schedule link, the App uploads your <strong>free/busy time blocks only</strong> (no titles, descriptions, locations, or attendees) to our server so others can view your availability via the link.</p>
 
@@ -234,9 +242,9 @@
             <li>The App offers a <strong>subscription</strong> (Monthly or Yearly) to unlock unlimited features</li>
             <li><strong>Free version limitations:</strong>
                 <ul>
-                    <li>Import: up to 3 times per month</li>
-                    <li>Export: up to 3 times per month</li>
-                    <li>Dedup: up to 1 scan per month</li>
+                    <li>Import: up to 10 events per batch</li>
+                    <li>Export: up to 3 times per month, 10 events per batch</li>
+                    <li>Dedup: up to 3 scans per month</li>
                 </ul>
             </li>
             <li><strong>Pro version:</strong> Unlimited import, export, dedup scans, and share schedules</li>
@@ -249,15 +257,16 @@
         <p>The App uses the following third-party services:</p>
         <ul>
             <li><strong>Apple App Store</strong> — For subscription payment processing</li>
-            <li><strong>No analytics SDKs</strong> — The App does not use analytics, advertising, or tracking services</li>
-            <li><strong>No crash reporting</strong> — The App does not use third-party crash reporting services</li>
+            <li><strong>Firebase Analytics</strong> (Google) — For anonymized usage analytics (screen views, feature events, purchase events). See "Firebase Analytics & Crashlytics" section above for details.</li>
+            <li><strong>Firebase Crashlytics</strong> (Google) — For crash log collection to improve app stability</li>
         </ul>
+        <p>The App does <strong>NOT</strong> use advertising SDKs, social tracking, or any other third-party analytics beyond Firebase.</p>
 
         <h2>Data security</h2>
         <ul>
             <li>All calendar data processing happens <strong>locally on your device</strong></li>
             <li>Shared schedule links contain only free/busy blocks, <strong>no event details</strong></li>
-            <li>No data is transmitted over the internet except for App Store purchase verification and share link generation</li>
+            <li>No calendar content is transmitted over the internet except for App Store purchase verification, share link generation, and anonymized Firebase analytics/crash data</li>
             <li>The App follows platform security best practices for calendar access</li>
         </ul>
 
@@ -291,7 +300,7 @@
         </div>
 
         <p style="text-align: center; margin-top: 30px; color: #999; font-size: 12px;">
-            Last updated: May 25, 2026
+            Last updated: May 28, 2026
         </p>
     </div>
 </body>
